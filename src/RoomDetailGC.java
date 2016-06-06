@@ -32,7 +32,7 @@ public class RoomDetailGC {
 			}
 			System.out.println("Goodbye!");
 		}		
-		
+		//clean up! close the scanner!
 		sc.close();
 	}
 
