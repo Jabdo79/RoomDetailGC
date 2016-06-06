@@ -13,11 +13,11 @@ public class RoomDetailGC {
 		while (cont) {
 			//take user inputs
 			System.out.print("Enter length: ");
-			length = sc.nextDouble();
+			length = Double.parseDouble(sc.next());
 			System.out.print("Enter Width: ");
-			width = sc.nextDouble();
+			width = Double.parseDouble(sc.next());
 			System.out.print("Enter Height: ");
-			height = sc.nextDouble();
+			height = Double.parseDouble(sc.next());
 			//calculate are, perimeter and volume
 			area = length * width;
 			System.out.println("Area: " + area);
@@ -30,10 +30,9 @@ public class RoomDetailGC {
 			if(sc.next().charAt(0)!='y'){
 				cont = false;
 			}
-			System.out.println("Goodbye!");
+			System.out.println("\nGoodbye!");
 		}		
 		//clean up! close the scanner!
 		sc.close();
 	}
-
 }
